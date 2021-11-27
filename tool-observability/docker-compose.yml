@@ -160,10 +160,10 @@ services:
     
     
 
-    app:
+    coproductos:
         build:
-            context: ./app
-        container_name: "app"
+            context: ./coproductos
+        container_name: "coproductos"
         ports:
             - '8080:8080'
         networks:

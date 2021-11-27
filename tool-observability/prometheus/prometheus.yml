@@ -3,8 +3,8 @@ global:
   evaluation_interval: 10s 
 
 scrape_configs:
-  - job_name: app
+  - job_name: coproductos
     scrape_interval: 1s
     metrics_path: /actuator/prometheus
     static_configs:
-      - targets: ['app:8080']
+      - targets: ['coproductos:8080']

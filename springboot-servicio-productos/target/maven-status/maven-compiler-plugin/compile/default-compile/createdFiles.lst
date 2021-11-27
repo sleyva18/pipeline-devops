@@ -1,6 +1,0 @@
-com/financieraoh/springboot/app/productos/models/dao/ProductoDao.class
-com/financieraoh/springboot/app/productos/models/service/IProductoService.class
-com/financieraoh/springboot/app/productos/models/service/ProductoServiceImpl.class
-com/financieraoh/springboot/app/productos/models/entity/Producto.class
-com/financieraoh/springboot/app/productos/SpringbootServicioProductosApplication.class
-com/financieraoh/springboot/app/productos/controllers/ProductoController.class
