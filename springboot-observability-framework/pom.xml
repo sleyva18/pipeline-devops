@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.springboot.observability.app.producto</groupId>
 	<artifactId>springboot-observability-framework</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>springboot-observability-framework</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
