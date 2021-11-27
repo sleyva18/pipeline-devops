@@ -1,9 +1,11 @@
-name: Maven Package
+name: pipeline-ci
 
 on:
   push:
     branches:
-    - main
+      - main
+    paths:
+      - springboot-observability-framework
 jobs:
   build:
 
