@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>${user.home}/.m2/repository</localRepository>
+
+  <servers>
+    <server>
+      <id>sleyva0208</id>
+      <username>sleyva0208</username>
+      <password>7upthke6cqa64scedzukuhrqn6so77xecnrsy4i5o3volypyl6hq</password>
+    </server>
+
+  </servers>
+
+  <mirrors>
+
+    <mirror>
+      <id>local-mirror</id>
+      <mirrorOf>my-repository</mirrorOf>
+      <url>file://${user.home}/.m2/repository</url>
+    </mirror>
+    <mirror>
+      <id>repo</id>
+      <mirrorOf>central</mirrorOf>
+      <name>repo principal maven.</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </mirror>
+    <mirror>
+      <id>repo1</id>
+      <mirrorOf>central</mirrorOf>
+      <name>repo1 maven</name>
+      <url>https://repo1.maven.org/maven2/</url>
+    </mirror>
+    <mirror>
+      <id>alimaven</id>
+      <mirrorOf>central</mirrorOf>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+    </mirror>
+  </mirrors>
+
+
+  <profiles>
+    <profile>
+      <id>myprofile</id>
+
+      <repositories>
+        <repository>
+          <id>sleyva0208</id>
+          <url>https://pkgs.dev.azure.com/sleyva0208/_packaging/sleyva0208/maven/v1</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+
+        <repository>
+          <id>my-repo1</id>
+          <name>your custom repo</name>
+          <url>https://mvnrepository.com</url>
+        </repository>
+      </repositories>
+
+    </profile>
+  </profiles>
+
+</settings>
