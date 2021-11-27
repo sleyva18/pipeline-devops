@@ -39,9 +39,8 @@ jobs:
         args: >
           -Dsonar.organization=sleyva0208
           -Dsonar.projectKey=springboot-observability-framework-key
-          -Dsonar.sources=springboot-observability-frameworksrc/main
+          -Dsonar.sources=springboot-observability-framework/src/main
           -Dsonar.test.exclusions=springboot-observability-framework/src/test/**
-          -Dsonar.tests=springboot-observability-framework/src/tests/
           -Dsonar.verbose=true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
