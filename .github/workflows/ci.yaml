@@ -37,6 +37,8 @@ jobs:
       run: |-
         ls -l
         pwd
+        cd springboot-observability-framework
+        ls -l
 
     # - name: Publish to GitHub Packages Apache Maven
     #   run: mvn deploy -s $GITHUB_WORKSPACE/springboot-observability-framework/settings.xml
