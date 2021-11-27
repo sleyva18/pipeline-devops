@@ -31,16 +31,13 @@ jobs:
           ${{ runner.os }}-maven-
 
     - name: Build with Maven
-      run: mvn -B package --file springboot-observability-framework/pom.xml
-
-    - name: listado de archivos
       run: |-
-        ls -l
-        pwd
         cd springboot-observability-framework
-        ls -l
+        mvn -B package --file pom.xml
 
-    # - name: Publish to GitHub Packages Apache Maven
-    #   run: mvn deploy -s $GITHUB_WORKSPACE/springboot-observability-framework/settings.xml
-    #   env:
-    #     GITHUB_TOKEN: ${{ github.token }}
+    - name: Publish to GitHub Packages Apache Maven
+      run: |-
+        cd springboot-observability-framework
+        mvn deploy -s settings.xml
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
