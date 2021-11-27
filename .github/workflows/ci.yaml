@@ -33,13 +33,13 @@ jobs:
     - name: Analyze with SonarCloud
       uses: sonarsource/sonarcloud-github-action@master
       with:
-        projectBaseDir: $GITHUB_WORKSPACE/springboot-observability-framework
+        projectBaseDir: .
         args: >
           -Dsonar.organization=sleyva0208
           -Dsonar.projectKey=springboot-observability-framework-key
-          -Dsonar.sources=src/main
-          -Dsonar.test.exclusions=src/test/**
-          -Dsonar.tests=src/tests/
+          -Dsonar.sources=springboot-observability-frameworksrc/main
+          -Dsonar.test.exclusions=springboot-observability-framework/src/test/**
+          -Dsonar.tests=springboot-observability-framework/src/tests/
           -Dsonar.verbose=true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
