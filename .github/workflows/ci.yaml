@@ -33,7 +33,7 @@ jobs:
     - name: Analyze with SonarCloud
       uses: sonarsource/sonarcloud-github-action@master
       with:
-        projectBaseDir: .
+        projectBaseDir: pipeline-devops
         args: >
           -Dsonar.organization=sleyva0208
           -Dsonar.projectKey=springboot-observability-framework-key
