@@ -29,6 +29,21 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
+    
+    - name: Analyze with SonarCloud
+      uses: sonarsource/sonarcloud-github-action@master
+      with:
+        projectBaseDir: springboot-observability-framework
+        args: >
+          -Dsonar.organization=sleyva0208
+          -Dsonar.projectKey=springboot-observability-framework-key
+          -Dsonar.sources=src/main
+          -Dsonar.test.exclusions=src/test/**
+          -Dsonar.tests=tests/
+          -Dsonar.verbose=true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: 231adeac2273382eea8475add0a49906324862d4
 
     - name: Build with Maven
       run: |-
