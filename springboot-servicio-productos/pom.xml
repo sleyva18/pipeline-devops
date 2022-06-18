@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>com.springboot.observability.app.producto</groupId>
 			<artifactId>springboot-observability-framework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.5-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	
